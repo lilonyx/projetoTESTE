@@ -1,0 +1,41 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: fixed url(fundo\ alternativo.png);
+    font-family: Inter;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #334456;
+    align-items: flex-start;
+    gap: 113px;
+}
+
+li {
+    float: inline-start;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    
+    margin: 15px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+#return {
+   margin-top: 15px;
+   margin-left: 20px;
+}
+#return {
+margin-top: 18px;
+}

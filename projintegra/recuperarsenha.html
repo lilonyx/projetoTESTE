@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recuperar senha</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(51, 68, 86);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .title {
+            font-family: Helvetica;
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .form-container-forgot {
+            align-items: center;
+            width: 415px;
+            padding: 30px;
+            border: 1px solid rgb(51, 68, 86);
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            background-color: rgb(51, 68, 86);
+            font-family: Helvetica;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-container-forgot h1 {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            text-align: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="email"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: rgb(51, 68, 86);
+            color: #fff;
+        }
+
+        button[type="submit"] {
+            width: 60%;
+            background-color: rgb(252, 239, 197);
+            color: rgb(51, 68, 86);
+            border: 1px solid rgb(252, 239, 197);
+            padding: 10px 0;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            font-weight: 700;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        button[type="submit"]:hover {
+            background-color: yellow; /* Alteração da cor para amarelo quando passa o mouse */
+        }
+
+        span {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-align: center;
+            color: #ffffff;
+            cursor: pointer;
+            transition: font-weight 0.3s;
+        }
+
+        span:hover {
+            color: #dadada;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container-forgot">
+        <form>
+            <h1 class="title">Recuperar senha</h1>
+            <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Seu email" required>
+            </div>
+            <button type="submit">Receber link</button>
+        </form>
+        <span>Login</span>
+    </div>
+</body>
+
+</html>

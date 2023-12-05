@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="cadastre-se.css">
+</head>
+<body>
+    <div class="form-container">
+        <form> 
+            <h1 class="title">Cadastre-se</h1>
+
+            <div class="form-group">
+                <input  class="input-box" type="text" id="user" name="user" [(ngModel)]="user" placeholder="Nome de usuário" required>
+            </div>
+
+            <div class="form-group">
+                <input  class="input-box" type="text" id="name" name="name" [(ngModel)]="name" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <input class="input-box" type="email" id="email" name="email" [(ngModel)]="email" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+                <input  class="input-box" type="password" id="password" name="password" [(ngModel)]="password" placeholder="Senha" required>
+            </div>
+
+            <div class="form-group">
+                <input  class="input-box" type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword" placeholder="Confirme sua senha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="simOuNao">Criar conta como: </label>
+                <select id="userTypeSelect" [(ngModel)]="userType" name="userType">
+                    <option value="Aluno">Aluno</option>
+                    <option value="Ministrante">Ministrante</option>
+                    <option value="Admin">Admin</option>
+                  </select>
+                  
+            </div>
+
+            <button type="submit" (click)="register()">Confirmar</button>
+        </form>
+        <span class="login" (click)="login()">Login</span>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(51, 68, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.title {
+    font-family: Helvetica;
+    font-size: 24px; 
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center; 
+    color: #fff;
+    font-weight: 700;
+}
+
+.form-container {
+    align-items: center;
+    width: 415px;
+    padding: 30px;
+    border: 1px solid rgb(51, 68, 86);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: rgb(51, 68, 86);
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column; /* Centraliza verticalmente */
+}
+
+
+span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px; 
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    transition: font-weight 0.3s;
+}
+
+span:hover {
+    color: #dadada; 
+}
+
+form {
+    max-width: 400px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(51, 68, 86);
+    color: #fff;
+}
+
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(51, 68, 86);
+    color: #fff;
+}
+
+button[type="submit"] {
+    text-align: center;
+    width: 80%;
+    background-color: #FCEFC5;
+    color: rgb(51, 68, 86);
+    border: 1px solid #FCEFC5;
+    padding: 10px 0; /* Ajustado para evitar largura excessiva */
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #FFD300;
+    color: rgb(51, 68, 86);
+    border: 1px solid #FCEFC5;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #f8f6f6;
+    border-radius: 3px;
+    background-color: #fdfdfd;
+    transition: background-color 0.3s, border-color 0.3s; 
+}
